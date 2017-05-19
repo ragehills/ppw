@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="PortfolioApp">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SCRIPT FOR LIBRARIES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script type='text/javascript' src='build/loading-bar.min.js'></script>
+    <!-- LINKS FOR LIBRARIES -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css">
+    <link rel='stylesheet' href='build/loading-bar.min.css' type='text/css' media='all' />
+    <!-- CUSTOM SCRIPTS -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/portfolio.controller.js"></script>
+    <script src="js/controllers/grid.controller.js"></script>
+    <!-- CUSTOM LINKS -->
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <!-- HTML PAGE TITLE -->
+    <title>Rage Hills</title>
+  </head>
+  <body>
+    <div ng-controller="gridListDemoCtrl as vm" flex="" ng-cloak="" class="gridListdemoDynamicTiles">
+      <a href="https://www.facebook.com/">
+        <md-grid-list md-cols="1" md-cols-sm="2" md-cols-md="3" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter="8px" md-gutter-gt-sm="4px">
+          <md-grid-tile ng-repeat="tile in vm.tiles" md-rowspan="{{tile.span.row}}" md-colspan="{{tile.span.col}}" md-colspan-sm="1" md-colspan-xs="1" ng-class="tile.background">
+          </md-grid-tile>
+        </md-grid-list>
+      </a>
+    </div>
+    <div ui-view>
 
-   <!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css"> -->
-  <link type="text/css" rel="stylesheet" href="css/styles.css" />
-
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
-
-  <script src="js/app.js"></script>
-  <script src="js/controllers/portfolio.controller.js"></script>
-
-  <title>James Colairo</title>
-</head>
-<body>
-  <h1>Portfolio</h1>
-  <nav>
-      <a ui-sref="home">Home</a>
-      <a ui-sref="contact">Contact</a>
-      <a ui-sref="about">About</a>
-      <!-- <a ui-sref="portfolio-connect4">Connect 4</a>
-      <a ui-sref="portfolio-movies">User, Movies</a>
-      <a ui-sref="portfolio-police">Police</a> -->
-  </nav>
-  <div ui-view>
-
-  </div>
-</body>
+    </div>
+  </body>
 </html>

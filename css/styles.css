@@ -1,1 +1,100 @@
 
+.gridListdemoDynamicTiles md-icon {
+  width: 50%;
+  height: 30%; }
+
+.gridListdemoDynamicTiles md-icon svg {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.gridListdemoDynamicTiles .s64 {
+  font-size: 64px; }
+
+.gridListdemoDynamicTiles .s32 {
+  font-size: 48px; }
+
+.gridListdemoDynamicTiles md-icon.fa {
+  display: block;
+  padding-left: 0; }
+
+.gridListdemoDynamicTiles md-icon.s32 span {
+  padding-left: 8px;
+}
+
+.gridListdemoDynamicTiles md-grid-list {
+  margin: 8px; 
+}
+
+.gridListdemoDynamicTiles .green {
+  background: #b9f6ca;
+  background: url("https://images.unsplash.com/photo-1468322638156-074863f9362e?dpr=1&auto=compress,format&fit=crop&w=568&h=379&q=80&cs=tinysrgb&crop=&bg=")center center no-repeat;
+  background-size: cover;
+}
+
+.gridListdemoDynamicTiles .yellow {
+  background: #ffff8d;
+  background: url("http://sdvoice.info/wp-content/uploads/2017/03/education.jpg")center center no-repeat;
+  background-size: cover;
+}
+
+.gridListdemoDynamicTiles .blue {
+  background: #84ffff; 
+  background: url("https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAy1AAAAJGY0OTU5OWFmLWVmMGQtNDY0Ni1hN2M5LTA5NDRkNDEwMzcwNA.jpg")center center no-repeat;
+  background-size: cover;
+}
+
+.gridListdemoDynamicTiles .darkBlue {
+  background: #80d8ff; 
+  background: url("https://images.unsplash.com/photo-1461237439866-5a557710c921?dpr=1&auto=compress,format&fit=crop&w=376&h=250&q=80&cs=tinysrgb&crop=&bg=")center center no-repeat;
+}
+
+.gridListdemoDynamicTiles .deepBlue {
+  background: #448aff; 
+  background: url("http://passiveresidualincomeideas.com/wp-content/uploads/2016/10/blogging.jpg")center center no-repeat;
+  background-size: cover;
+}
+
+.gridListdemoDynamicTiles .purple {
+  background: #b388ff;
+  background: url("https://www.elprocus.com/wp-content/uploads/2013/03/Latest-electronics-projects-ideas.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.gridListdemoDynamicTiles .red {
+  background: #ff8a80;
+  background: url("https://scontent.xx.fbcdn.net/v/t1.0-9/14370236_122715441522038_6294292966394391285_n.jpg?oh=9ea5f45562d85c374f278c85022ac112&oe=59BAAD46") center center no-repeat;
+  background-size: cover;
+  
+}
+
+.gridListdemoDynamicTiles .grey {
+  background: #ff80ab; 
+  background: url("http://sitesao.com/sitesao2/wp-content/uploads/2016/03/create-contact-form.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.gridListdemoDynamicTiles .pink {
+  background: #ff80ab; 
+  background: url("http://media1.santabanta.com/full1/Sports/Games/games-262v.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.gridListdemoDynamicTiles md-grid-tile {
+  transition: all 300ms ease-out 50ms; }
+
+.gridListdemoDynamicTiles md-grid-tile md-icon {
+  padding-bottom: 32px; }
+
+.gridListdemoDynamicTiles md-grid-tile md-grid-tile-footer {
+  background: rgba(0, 0, 0, 0.68);
+  height: 36px; }
+
+.gridListdemoDynamicTiles md-grid-tile-footer figcaption {
+  width: 100%; }
+
+.gridListdemoDynamicTiles md-grid-tile-footer figcaption h3 {
+  margin: 0;
+  font-weight: 700;
+  width: 100%;
+  text-align: center; }

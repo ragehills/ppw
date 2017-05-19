@@ -47,5 +47,5 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
 }
 
 angular
-  .module('PortfolioApp', ['ui.router'])
+  .module('PortfolioApp', ['ui.router', 'ngMaterial', 'angular-loading-bar', 'ngAnimate'])
   .config(MainRouter);
